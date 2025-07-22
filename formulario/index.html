@@ -1,0 +1,52 @@
+
+
+<link rel="stylesheet" href="./src/style.css" />
+
+<form id="formulario">
+  <label for="nome">Nome completo:</label>
+  <input id="nome" type="text" name="nome" placeholder="joao victor kmnaiecik matos" required />
+
+  <label for="email">Email:</label>
+  <input id="email" type="email" name="email" placeholder="joao@gmail.com" required />
+
+  <label for="senha">Senha</label>
+  <input id="senha" type="senha" name="senha" placeholder="1234567" required/>
+
+ <label for="cursos">curso:</label>
+  <select id="estadoCivil" name="estadoCivil" required>
+    <option value="" disabled selected>Selecione um curso</option>
+    <option value="ADS">ADS</option>
+    <option value="Casado(a)">Matematioca</option>
+    <option value="Divorciado(a)">Arquitetura</option>
+    <option value="Viuvo(a)">Engenharia</option>
+  </select>
+
+  <label for="telefone">Telefone:</label>
+  <input id="telefone" type="tel" name="telefone" placeholder="(99) 99999-9999" required />
+
+  <label for="dataNascimento">Data de nascimento:</label>
+  <input id="dataNascimento" type="date" name="dataNascimento" required />
+
+  <fieldset>
+    <legend>Sexo:</legend>
+    <label><input type="radio" name="sexo" value="Masculino" required /> Masculino</label>
+    <label><input type="radio" name="sexo" value="Feminino" /> Feminino</label>
+    
+  </fieldset>
+
+  <label for="estadoCivil">Estado civil:</label>
+  <select id="estadoCivil" name="estadoCivil" required>
+    <option value="" disabled selected>Selecione</option>
+    <option value="Solteiro(a)">Solteiro(a)</option>
+    <option value="Casado(a)">Casado(a)</option>
+    <option value="Divorciado(a)">Divorciado(a)</option>
+    <option value="Viuvo(a)">Viuvo(a)</option>
+  </select>
+
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+  <label><input type="checkbox" name="termos" required /> Aceito os termos e condicoes</label>
+
+  <button type="submit">Enviar</button>
+</form>

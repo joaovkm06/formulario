@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #222;
+}
+
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  transform: scale(1.02);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="senha"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="senha"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+fieldset {
+  margin-bottom: 18px;
+  border: none;
+  padding: 0;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: #007bff;
+}
+
+form:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+transform: translateY(-6px);
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+  
+}
+
+label:hover {
+  color: #007bff;
+  cursor: pointer;
+  transform: scale(1.02);
+}
